@@ -261,28 +261,20 @@ iframe {
   object-fit: contain;
   position: relative;
   z-index: 2;
-  animation: logoEntrada 1s var(--ease-out) 0.2s both;
-  transition: transform 0.5s var(--ease-out), filter 0.4s ease;
-  /* Sombra inicial suave */
-  filter: drop-shadow(0 2px 12px rgba(201,162,77,0.25));
+  animation: none;
+  transition: transform 0.2s ease;
+  filter: none;
+  opacity: 1;
 }
 
 .c-nav__logo-img:hover {
-  transform: scale(1.08) rotate(-2deg);
-  filter:
-    drop-shadow(0 0 14px rgba(201,162,77,0.7))
-    drop-shadow(0 0 30px rgba(201,162,77,0.35));
+  transform: scale(1.02);
+  filter: none;
 }
 
 /* Aura dorada que pulsa detrás del logo */
 .c-nav__logo-glow {
-  position: absolute;
-  inset: -8px -14px;
-  border-radius: 10px;
-  background: radial-gradient(circle, rgba(201,162,77,0.18) 0%, transparent 75%);
-  animation: auraPulse 3s ease-in-out infinite;
-  pointer-events: none;
-  z-index: 1;
+  display: none;
 }
 
 @keyframes logoEntrada {
