@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ezequielblackgalaxx-design.github.io/taberna-boo-gastronomia-demo/sitemap.xml
