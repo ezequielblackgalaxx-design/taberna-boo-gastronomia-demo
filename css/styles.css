@@ -1215,11 +1215,67 @@ iframe {
   color: var(--color-dark);
 }
 
+.c-copy--local-seo {
+  margin-bottom: var(--space-lg);
+  max-width: 36rem;
+}
+
 .c-visit__map {
   border-radius: var(--radius-md);
   overflow: hidden;
   height: 480px;
   box-shadow: 0 20px 60px rgba(13, 26, 14, 0.15);
+}
+
+/* ═══════════════════════════════════════════════════════════
+   FAQ SEO LOCAL
+═══════════════════════════════════════════════════════════ */
+.c-faq {
+  padding: var(--space-xl) var(--space-md);
+  background: linear-gradient(180deg, var(--color-cream) 0%, #efe4d0 100%);
+}
+
+.c-faq__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.c-faq__header {
+  max-width: 760px;
+  margin-bottom: var(--space-lg);
+}
+
+.c-faq__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-md);
+}
+
+.c-faq__item {
+  padding: var(--space-md);
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(13, 26, 14, 0.08);
+  border-radius: var(--radius-md);
+  box-shadow: 0 12px 36px rgba(13, 26, 14, 0.06);
+}
+
+.c-faq__item h3 {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  color: var(--color-dark);
+}
+
+.c-faq__item p,
+.c-faq__item a {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--color-text-muted);
+}
+
+.c-faq__item a:hover {
+  color: var(--color-dark);
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -1408,6 +1464,10 @@ iframe {
   }
 
   .c-visit__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .c-faq__grid {
     grid-template-columns: 1fr;
   }
 
