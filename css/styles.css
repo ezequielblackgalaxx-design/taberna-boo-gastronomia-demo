@@ -959,6 +959,15 @@ iframe {
   color: var(--color-cream);
 }
 
+.dish-price {
+  font-family: var(--font-caps);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  font-weight: 500;
+}
+
 .dish-desc {
   font-size: 0.85rem;
   color: rgba(248, 244, 237, 0.55);
