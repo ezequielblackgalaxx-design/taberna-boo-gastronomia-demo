@@ -1487,4 +1487,26 @@ iframe {
     font-size: 0.7rem;
     padding: 0.65rem 1.2rem;
   }
+
+  .c-nav__logo-wrap {
+    transform: none;
+  }
+
+  .c-nav__logo-img {
+    height: 36px;
+    animation: none;
+    transition: none;
+    filter: none;
+    transform: none;
+    opacity: 1;
+  }
+
+  .c-nav__logo-img:hover {
+    transform: none;
+    filter: none;
+  }
+
+  .c-nav__logo-glow {
+    display: none;
+  }
 }
