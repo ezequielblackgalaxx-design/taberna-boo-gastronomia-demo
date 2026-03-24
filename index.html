@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taberna Boo | Gastronomía · Constanza</title>
+  <meta name="description" content="Taberna Boo Gastronomía — Una experiencia culinaria única en el corazón de Constanza, el jardín de la República Dominicana. Cocina honesta, ingredientes frescos, sabores que perduran." />
+  <meta property="og:title" content="Taberna Boo | Gastronomía · Constanza" />
+  <meta property="og:description" content="Cocina honesta y de temporada en el corazón de Constanza." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0f1a10" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&family=Cormorant+SC:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVEGACIÓN
+  ═══════════════════════════════════════════ -->
+  <header class="c-header" id="header">
+    <a href="#inicio" class="c-nav__logo">
+      <div class="c-nav__logo-wrap">
+        <img src="img/logo-transparent.png" alt="Taberna Boo Gastronomía" class="c-nav__logo-img" />
+        <div class="c-nav__logo-glow" aria-hidden="true"></div>
+      </div>
+    </a>
+
+    <button class="c-nav-btn js-open-nav" aria-label="Abrir menú" aria-expanded="false">
+      <span class="c-nav-btn__line"></span>
+      <span class="c-nav-btn__line"></span>
+      <span class="c-nav-btn__line"></span>
+    </button>
+
+    <nav class="c-nav" id="mainNav" aria-hidden="true">
+      <div class="c-nav__overlay js-close-nav"></div>
+      <div class="c-nav__wrap">
+        <ul class="c-nav-list">
+          <li><a href="#inicio" class="c-nav__link js-close-nav">Inicio</a></li>
+          <li><a href="#nosotros" class="c-nav__link js-close-nav">Nuestra Historia</a></li>
+          <li><a href="#menu" class="c-nav__link js-close-nav">Menú</a></li>
+          <li><a href="#galeria" class="c-nav__link js-close-nav">Galería</a></li>
+          <li><a href="#visita" class="c-nav__link js-close-nav">Visítanos</a></li>
+          <li><a href="tel:+18297079512" class="c-nav__link c-nav__link--cta">Reservar · 829-707-9512</a></li>
+        </ul>
+        <div class="c-nav__social">
+          <a href="https://www.instagram.com/tabernaboo/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Botón de reserva flotante -->
+  <a href="tel:+18297079512" class="c-reservation-btn" aria-label="Llamar para reservar">
+    Reservaciones
+  </a>
+
+  <!-- ═══════════════════════════════════════════
+       HERO — PANTALLA COMPLETA
+  ═══════════════════════════════════════════ -->
+  <section class="c-hero" id="inicio">
+    <div class="c-hero__media">
+      <img
+        class="c-hero__img"
+        src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1800&q=85"
+        srcset="
+          https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80   800w,
+          https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80 1200w,
+          https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1800&q=85 1800w
+        "
+        sizes="100vw"
+        alt="Interior elegante de Taberna Boo Gastronomía"
+        fetchpriority="high"
+      />
+    </div>
+    <div class="c-hero__overlay"></div>
+    <div class="c-hero__content">
+      <div class="c-hero__tagline">Constanza · República Dominicana</div>
+      <h1 class="c-hero__title">
+        <div class="c-hero__logo-wrap">
+          <img
+            src="img/logo-transparent.png"
+            alt="Taberna Boo Gastronomía"
+            class="c-hero__logo-img"
+          />
+        </div>
+      </h1>
+      <p class="c-hero__desc">Cocina honesta. Ingredientes del valle. Sabores que perduran.</p>
+      <div class="c-hero__actions">
+        <a href="#menu" class="c-btn c-btn--outline">Ver el Menú</a>
+        <a href="tel:+18297079512" class="c-btn c-btn--primary">Reservar Mesa</a>
+      </div>
+    </div>
+    <div class="c-hero__scroll-hint" aria-hidden="true">
+      <span>Descubrir</span>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FRANJA — DATOS RÁPIDOS
+  ═══════════════════════════════════════════ -->
+  <div class="c-strip">
+    <div class="c-strip__inner">
+      <div class="c-strip__item">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <div>
+          <strong>Almuerzo</strong>
+          <span>12:00 PM – 3:00 PM</span>
+        </div>
+      </div>
+      <div class="c-strip__divider" aria-hidden="true"></div>
+      <div class="c-strip__item">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <div>
+          <strong>Cena</strong>
+          <span>6:00 PM – 11:00 PM</span>
+        </div>
+      </div>
+      <div class="c-strip__divider" aria-hidden="true"></div>
+      <div class="c-strip__item">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div>
+          <strong>Ubicación</strong>
+          <span>Calle Matilde Viñas, Constanza</span>
+        </div>
+      </div>
+      <div class="c-strip__divider" aria-hidden="true"></div>
+      <div class="c-strip__item">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2c-3.04-.36-5.95-1.35-8.55-2.91a20.06 20.06 0 0 1-5.38-5.38A19.99 19.99 0 0 1 3.08 5.18 2 2 0 0 1 5.07 3H8a2 2 0 0 1 2 1.72c.13.97.36 1.92.7 2.84a2 2 0 0 1-.45 2.11L9.09 10.91a16 16 0 0 0 5 5l1.24-1.24a2 2 0 0 1 2.11-.45c.92.34 1.87.57 2.84.7A2 2 0 0 1 22 16.92z"/></svg>
+        <div>
+          <strong>Teléfono</strong>
+          <span>829-707-9512</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       NUESTRA HISTORIA
+  ═══════════════════════════════════════════ -->
+  <section class="c-about" id="nosotros">
+    <div class="c-about__grid">
+      <div class="c-about__image-col" data-reveal="left">
+        <div class="c-about__image-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=80"
+            alt="Chef preparando platos en Taberna Boo"
+            loading="lazy"
+          />
+        </div>
+        <div class="c-about__image-accent">
+          <img
+            src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=600&q=80"
+            alt="Ingredientes frescos del valle de Constanza"
+            loading="lazy"
+          />
+        </div>
+      </div>
+
+      <div class="c-about__text-col" data-reveal="right">
+        <span class="c-label">Nuestra Historia</span>
+        <h2 class="c-heading">
+          Más que una comida.<br />
+          <em>Una experiencia.</em>
+        </h2>
+        <p class="c-copy">
+          En el corazón del valle de Constanza —el jardín de la República Dominicana— 
+          nació Taberna Boo con una idea sencilla: cocinar honestamente con lo que la 
+          tierra nos regala. Aquí, cada plato cuenta la historia del agricultor que 
+          sembró el ingrediente y del chef que lo transformó con pasión.
+        </p>
+        <p class="c-copy">
+          Nos enorgullece trabajar con los productores locales del valle, quienes nos 
+          traen fresas, setas, truchas y vegetales de temporada recién cosechados. 
+          Compartir la mesa es nuestro lenguaje: servimos para disfrutar juntos.
+        </p>
+        <div class="c-about__highlights">
+          <div class="c-highlight">
+            <span class="c-highlight__num">100%</span>
+            <span class="c-highlight__label">Ingredientes Locales</span>
+          </div>
+          <div class="c-highlight">
+            <span class="c-highlight__num">5 ★</span>
+            <span class="c-highlight__label">Calificación TripAdvisor</span>
+          </div>
+          <div class="c-highlight">
+            <span class="c-highlight__num">∞</span>
+            <span class="c-highlight__label">Cada visita es diferente</span>
+          </div>
+        </div>
+        <a href="#menu" class="c-btn c-btn--dark">Explorar el Menú</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       MENÚ — SECCIÓN OSCURA
+  ═══════════════════════════════════════════ -->
+  <section class="c-menu" id="menu">
+    <div class="c-menu__bg">
+      <img
+        src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=80"
+        alt=""
+        aria-hidden="true"
+        loading="lazy"
+      />
+    </div>
+    <div class="c-menu__overlay"></div>
+    <div class="c-menu__content">
+      <div class="c-menu__header" data-reveal="up">
+        <span class="c-label c-label--light">Lo Que Ofrecemos</span>
+        <h2 class="c-heading c-heading--light">El Menú de <em>Temporada</em></h2>
+        <p class="c-copy c-copy--light">
+          Nuestro menú cambia con las estaciones del valle. Siempre fresco, siempre sorprendente.
+        </p>
+      </div>
+
+      <div class="c-menu__categories">
+        <div class="c-menu-cat" data-reveal="up" style="--delay: 0.1s">
+          <div class="c-menu-cat__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3>Entradas</h3>
+          <ul>
+            <li>
+              <span class="dish-name">Ceviche del Valle</span>
+              <span class="dish-desc">Trucha fresca, leche de tigre de ají caballero, maíz morado</span>
+            </li>
+            <li>
+              <span class="dish-name">Carpaccio de Remolacha</span>
+              <span class="dish-desc">Remolacha de Constanza, queso de cabra, pistachos, reducción balsámica</span>
+            </li>
+            <li>
+              <span class="dish-name">Bruschetta de Setas Locales</span>
+              <span class="dish-desc">Pan artesanal, hongos del valle, aceite de trufa, hierbas frescas</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="c-menu-cat" data-reveal="up" style="--delay: 0.2s">
+          <div class="c-menu-cat__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+          </div>
+          <h3>Platos Principales</h3>
+          <ul>
+            <li>
+              <span class="dish-name">Trucha del Valle al Vapor</span>
+              <span class="dish-desc">Trucha de Constanza, mantequilla de limón, puré de papa criolla, vegetales salteados</span>
+            </li>
+            <li>
+              <span class="dish-name">Costillar de Cerdo Braseado</span>
+              <span class="dish-desc">12 horas de cocción lenta, glaseado de tamarindo, yuca frita, ensalada criolla</span>
+            </li>
+            <li>
+              <span class="dish-name">Risotto de Temporada</span>
+              <span class="dish-desc">Arroz arborio, vegetales del valle, parmesano, aceite de albahaca</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="c-menu-cat" data-reveal="up" style="--delay: 0.3s">
+          <div class="c-menu-cat__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h3>Postres & Bebidas</h3>
+          <ul>
+            <li>
+              <span class="dish-name">Mousse de Fresa de Constanza</span>
+              <span class="dish-desc">Fresas locales, crema chantilly, bizcocho de almendra, coulis de frutas</span>
+            </li>
+            <li>
+              <span class="dish-name">Fondant de Cacao Dominicano</span>
+              <span class="dish-desc">Chocolate 70% de origen, helado de vainilla, sal marina</span>
+            </li>
+            <li>
+              <span class="dish-name">Cócteles Artesanales</span>
+              <span class="dish-desc">Creaciones únicas con ron dominicano, frutas del valle y hierbas frescas de temporada</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="c-menu__note" data-reveal="up">
+        <p>El menú varía según los ingredientes de temporada disponibles. Consulta con tu mesero las opciones del día.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       GALERÍA
+  ═══════════════════════════════════════════ -->
+  <section class="c-gallery" id="galeria">
+    <div class="c-gallery__header" data-reveal="up">
+      <span class="c-label">Momentos en la Mesa</span>
+      <h2 class="c-heading">Una imagen <em>vale mil sabores</em></h2>
+    </div>
+
+    <div class="c-gallery__grid">
+      <div class="c-gallery__item c-gallery__item--large" data-reveal="up" style="--delay: 0.0s">
+        <img
+          src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=80"
+          alt="Ambiente acogedor del restaurante"
+          loading="lazy"
+        />
+        <div class="c-gallery__caption">Ambiente</div>
+      </div>
+      <div class="c-gallery__item" data-reveal="up" style="--delay: 0.1s">
+        <img
+          src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=700&q=80"
+          alt="Plato gourmet de temporada"
+          loading="lazy"
+        />
+        <div class="c-gallery__caption">Cocina de Temporada</div>
+      </div>
+      <div class="c-gallery__item" data-reveal="up" style="--delay: 0.2s">
+        <img
+          src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=700&q=80"
+          alt="Ingredientes frescos del valle"
+          loading="lazy"
+        />
+        <div class="c-gallery__caption">Del Valle a la Mesa</div>
+      </div>
+      <div class="c-gallery__item" data-reveal="up" style="--delay: 0.3s">
+        <img
+          src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=700&q=80"
+          alt="Desayuno especial de la casa"
+          loading="lazy"
+        />
+        <div class="c-gallery__caption">La Casa</div>
+      </div>
+      <div class="c-gallery__item c-gallery__item--wide" data-reveal="up" style="--delay: 0.4s">
+        <img
+          src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=1200&q=80"
+          alt="Mesa preparada para la cena"
+          loading="lazy"
+        />
+        <div class="c-gallery__caption">Para Compartir</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CONSTANZA — SECCIÓN VALLE
+  ═══════════════════════════════════════════ -->
+  <section class="c-valley">
+    <div class="c-valley__media">
+      <img
+        src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1600&q=80"
+        alt="Valle de Constanza, el jardín de la República Dominicana"
+        loading="lazy"
+      />
+      <div class="c-valley__overlay"></div>
+    </div>
+    <div class="c-valley__content" data-reveal="up">
+      <span class="c-label c-label--light">El Terroir</span>
+      <h2 class="c-heading c-heading--light">
+        Constanza:<br />
+        <em>El Jardín de la República</em>
+      </h2>
+      <p class="c-copy c-copy--light">
+        Ubicada a 1,200 metros sobre el nivel del mar, Constanza es la tierra de los 
+        contrastes: días cálidos, noches frescas, y un suelo fértil que produce las 
+        fresas, papas, lechugas y hongos más exquisitos del Caribe. Nuestra cocina 
+        nace de este valle privilegiado.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       VISÍTANOS — HORAS Y UBICACIÓN
+  ═══════════════════════════════════════════ -->
+  <section class="c-visit" id="visita">
+    <div class="c-visit__grid">
+      <div class="c-visit__info" data-reveal="left">
+        <span class="c-label">Encuéntranos</span>
+        <h2 class="c-heading">Visítanos <em>pronto</em></h2>
+
+        <div class="c-hours">
+          <h3 class="c-hours__title">Horario</h3>
+          <div class="c-hours__row">
+            <span class="c-hours__days">Lunes – Viernes</span>
+            <span class="c-hours__time">12:00 PM – 3:00 PM · 6:00 PM – 11:00 PM</span>
+          </div>
+          <div class="c-hours__row">
+            <span class="c-hours__days">Sábados</span>
+            <span class="c-hours__time">12:00 PM – 11:00 PM</span>
+          </div>
+          <div class="c-hours__row">
+            <span class="c-hours__days">Domingos</span>
+            <span class="c-hours__time">12:00 PM – 9:00 PM</span>
+          </div>
+        </div>
+
+        <div class="c-contact-info">
+          <div class="c-contact-info__item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <address>
+              Calle Matilde Viñas, casi Esq. Antonio María García<br />
+              Constanza, La Vega, República Dominicana
+            </address>
+          </div>
+          <div class="c-contact-info__item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2c-3.04-.36-5.95-1.35-8.55-2.91a20.06 20.06 0 0 1-5.38-5.38A19.99 19.99 0 0 1 3.08 5.18 2 2 0 0 1 5.07 3H8a2 2 0 0 1 2 1.72c.13.97.36 1.92.7 2.84a2 2 0 0 1-.45 2.11L9.09 10.91a16 16 0 0 0 5 5l1.24-1.24a2 2 0 0 1 2.11-.45c.92.34 1.87.57 2.84.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+18297079512">(829) 707-9512</a>
+          </div>
+          <div class="c-contact-info__item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
+            <a href="https://www.instagram.com/tabernaboo/" target="_blank" rel="noopener noreferrer">@tabernaboo</a>
+          </div>
+        </div>
+
+        <a href="tel:+18297079512" class="c-btn c-btn--dark">Llamar para Reservar</a>
+      </div>
+
+      <div class="c-visit__map" data-reveal="right">
+        <iframe
+          title="Ubicación de Taberna Boo en Constanza"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3775.123!2d-70.7445!3d18.9075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea3f8b1e1234567%3A0x1234567890abcdef!2sConstanza%2C%20La%20Vega!5e0!3m2!1ses!2sdo!4v1234567890"
+          width="100%"
+          height="100%"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       RESERVA — CTA FINAL
+  ═══════════════════════════════════════════ -->
+  <section class="c-cta">
+    <div class="c-cta__content" data-reveal="up">
+      <span class="c-label c-label--light">¿Listo para vivir la experiencia?</span>
+      <h2 class="c-heading c-heading--light">Reserva tu mesa <em>hoy</em></h2>
+      <p class="c-copy c-copy--light">
+        Grupos privados, celebraciones especiales y experiencias del chef disponibles. 
+        Contáctanos para conocer nuestras opciones.
+      </p>
+      <div class="c-cta__actions">
+        <a href="tel:+18297079512" class="c-btn c-btn--gold">829-707-9512</a>
+        <a href="https://www.instagram.com/tabernaboo/" target="_blank" rel="noopener noreferrer" class="c-btn c-btn--outline-light">Seguirnos en Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="c-footer">
+    <div class="c-footer__top">
+      <div class="c-footer__brand">
+        <img src="img/logo-transparent.png" alt="Taberna Boo Gastronomía" class="c-footer__logo-img" />
+        <p>Gastronomía honesta en el corazón de Constanza.</p>
+      </div>
+      <nav class="c-footer__nav" aria-label="Navegación pie de página">
+        <h4>Secciones</h4>
+        <ul>
+          <li><a href="#nosotros">Nuestra Historia</a></li>
+          <li><a href="#menu">El Menú</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#visita">Visítanos</a></li>
+        </ul>
+      </nav>
+      <div class="c-footer__contact">
+        <h4>Contacto</h4>
+        <address>
+          Calle Matilde Viñas, casi Esq.<br />
+          Antonio María García<br />
+          Constanza, La Vega, RD
+        </address>
+        <a href="tel:+18297079512">(829) 707-9512</a>
+        <div class="c-footer__social">
+          <a href="https://www.instagram.com/tabernaboo/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Taberna Boo">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="c-footer__bottom">
+      <p>&copy; <span id="year"></span> Taberna Boo Gastronomía · Constanza, República Dominicana</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
